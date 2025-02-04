@@ -60,3 +60,31 @@
         println!("Você adivinhou: {}", numero);
 
 ## Esta linha imprime a string que agora contém a entrada do usuário. O {}conjunto de chaves é um espaço reservado: pense {}como pequenas pinças de caranguejo que seguram um valor no lugar.
+
+# Gerando um número secreto:
+
+## Gerar um número secreto que o usuário tentará adivinhar. O número secreto deve ser diferente a cada vez para que o jogo seja divertido de jogar mais de uma vez. Usaremos um número aleatório entre 1 e 100. A equipe do Rust fornece uma randcaixa com essa funcionalidade.
+
+## Precisamos modificar o arquivo Cargo.toml para incluir a randcaixa como uma dependência. Abra esse arquivo e adicione a seguinte linha na parte inferior, abaixo do [dependencies]:
+
+[dependencies]
+rand = "0.9.0"
+
+# Gerando um número aleatório:
+
+## Primeiro, adicionamos a linha use rand::Rng;. O Rngtrait define métodos que geradores de números aleatórios implementam, e esse trait deve estar no escopo para que possamos usar esses métodos;
+
+use rand::Rng;
+
+## Em seguida, estamos adicionando a rand::thread_rng função que nos dá o gerador de números aleatórios específico que usaremos: um que é local para o thread atual de execução e é semeado pelo sistema operacional. Então chamamos o gen_range método no gerador de números aleatórios.
+
+## Este método é definido pelo Rng trait que trouxemos para o escopo com a use rand::Rng;declaração. O gen_range método pega uma expressão de intervalo como argumento e gera um número aleatório no intervalo. O tipo de expressão de intervalo que estamos usando aqui assume a forma start..=ende é inclusivo nos limites inferior e superior, então precisamos especificar 1..=100 para solicitar um número entre 1 e 100.
+
+let secret_number = rand::thread_rng().gen_range(1..=100);
+
+# Comparando o palpite com o número secreto:
+
+## Agora que temos a entrada do usuário e um número aleatório, podemos compará-los.
+
+
+
