@@ -1,0 +1,12 @@
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\libahash-93b486b2d9f79998.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\convert.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\fallback_hash.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\operations.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\random_state.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\specialize.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\hash_map.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\hash_set.rs
+
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\ahash-93b486b2d9f79998.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\convert.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\fallback_hash.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\operations.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\random_state.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\specialize.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\hash_map.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\hash_set.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\convert.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\fallback_hash.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\operations.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\random_state.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\specialize.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\hash_map.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\ahash-0.8.11\src\hash_set.rs:

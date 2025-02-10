@@ -1,90 +1,122 @@
-# Este código contém muitas informações, então vamos analisá-lo linha por linha.
+# Jogo de Adivinhação
 
-## Para obter a entrada do usuário e então imprimir o resultado como saída, precisamos trazer a iobiblioteca de entrada/saída para o escopo. A iobiblioteca vem da biblioteca padrão, conhecida como std:
+Este é um jogo de adivinhação simples desenvolvido em Rust com uma interface gráfica utilizando a biblioteca `eframe` e `egui`. O objetivo do jogo é adivinhar um número secreto gerado aleatoriamente entre 1 e 100.
 
-        use std::io;
+## Como Funciona
 
-## Usar a std::iobiblioteca fornece a você uma série de recursos úteis, incluindo a capacidade de aceitar entrada do usuário.
+O jogo gera um número secreto aleatório entre 1 e 100. O usuário deve inserir uma suposição e o jogo irá comparar a suposição com o número secreto, exibindo uma mensagem indicando se a suposição é muito pequena, muito grande ou correta. Se a suposição estiver correta, o jogo reinicia com um novo número secreto.
 
-## Como você viu no Capítulo 1, a mainfunção é o ponto de entrada no programa:
+## Dependências
 
-        fn main() {
+Para executar este projeto, você precisará das seguintes dependências:
 
-## A fn sintaxe declara uma nova função; os parênteses, (), indicam que não há parâmetros; e as chaves, {, iniciam o corpo da função.
+- `rand` para geração de números aleatórios
+- `eframe` e `egui` para a interface gráfica
 
-## Como você também aprendeu, println!é uma macro que imprime uma string na tela:
+Estas dependências estão especificadas no arquivo `Cargo.toml`:
 
-        println!("Adivinhe o número!");
-
-        println!("Por favor, insira seu palpite.");
-
-## Este código está imprimindo um prompt informando qual é o jogo e solicitando informações do usuário.
-
-# Armazenando valores com variáveis.
-
-## Criaremos uma variável para armazenar a entrada do usuário, assim:
-
-        let mut numero = String::new();
-
-## Em Rust, as variáveis ​​são imutáveis ​​por padrão, o que significa que, uma vez que damos um valor à variável, o valor não mudará. Para tornar uma variável mutável, adicionamos mut antes do nome da variável:
-
-## let mut numero introduzirá uma variável mutável chamada numero. O sinal de igual ( =) diz ao Rust que queremos vincular algo à variável agora. À direita do sinal de igual está o valor que numero está vinculado a, que é o resultado da chamada String::new, uma função que retorna uma nova instância de um String. String é um tipo de string fornecido pela biblioteca padrão que é um bit de texto codificado em UTF-8 e expansível.
-
-## A ::sintaxe na ::new linha indica que new é uma função associada do String tipo. Uma função associada é uma função que é implementada em um tipo, neste caso String. Esta new função cria uma nova string vazia. Você encontrará uma new função em muitos tipos porque é um nome comum para uma função que cria um novo valor de algum tipo.
-
-## Na íntegra, a let mut numero = String::new(); linha criou uma variável mutável que está atualmente vinculada a uma nova instância vazia de a String.
-
-# Recebendo entrada do usuário:
-
-## Incluímos a funcionalidade de entrada/saída da biblioteca padrão use std::io; na primeira linha do programa. Agora, chamaremos a stdinfunção do io módulo, o que nos permitirá manipular a entrada do usuário:
-
-        io::stdin()
-                .read_line(&mut numero)
-
-## A stdin função retorna uma instância de std::io::Stdin, que é um tipo que representa um handle para a entrada padrão do seu terminal.
-
-## Em seguida, a linha .read_line(&mut numero)chama o read_line método no identificador de entrada padrão para obter a entrada do usuário. Também estamos passando &mut numero como argumento para read_line para dizer em qual string armazenar a entrada do usuário. O trabalho completo de read_line é pegar o que o usuário digitar na entrada padrão e anexá-lo a uma string, então passamos essa string como um argumento. O argumento da string precisa ser mutável para que o método possa alterar o conteúdo da string.
-
-## O & indica que esse argumento é uma referência , o que lhe dá uma maneira de deixar várias partes do seu código acessarem um pedaço de dados sem precisar copiar esses dados para a memória várias vezes. Referências são um recurso complexo, e uma das principais vantagens do Rust. Assim como as variáveis, as referências são imutáveis ​​por padrão. Portanto, você precisa escrever &mut numero em vez de &numero torná-lo mutável.
-
-# Lidando com falhas potenciais com Result:
-
-        .expect("Falha ao ler a linha");
-
-## Result As variantes de são Ok e Err. A Ok variante indica que a operação foi bem-sucedida, e dentro dela Ok está o valor gerado com sucesso. A Err variante significa que a operação falhou, e Err contém informações sobre como ou por que a operação falhou.
-
-## Valores do Result tipo, como valores de qualquer tipo, têm métodos definidos neles. Uma instância de Result tem um expect método que você pode chamar. Se essa instância de Result for um Err valor, expect fará com que o programa trave e exiba a mensagem que você passou como argumento para expect. Se o read_line método retornar um Err, provavelmente seria o resultado de um erro vindo do sistema operacional subjacente. Se essa instância de Result for um Ok valor, expect pegará o valor de retorno que Ok está segurando e retornará apenas esse valor para você, para que você possa usá-lo. Nesse caso, esse valor é o número de bytes na entrada do usuário.
-
-# Imprimindo valores com println!
-
-        println!("Você adivinhou: {}", numero);
-
-## Esta linha imprime a string que agora contém a entrada do usuário. O {}conjunto de chaves é um espaço reservado: pense {}como pequenas pinças de caranguejo que seguram um valor no lugar.
-
-# Gerando um número secreto:
-
-## Gerar um número secreto que o usuário tentará adivinhar. O número secreto deve ser diferente a cada vez para que o jogo seja divertido de jogar mais de uma vez. Usaremos um número aleatório entre 1 e 100. A equipe do Rust fornece uma randcaixa com essa funcionalidade.
-
-## Precisamos modificar o arquivo Cargo.toml para incluir a randcaixa como uma dependência. Abra esse arquivo e adicione a seguinte linha na parte inferior, abaixo do [dependencies]:
-
+```toml
 [dependencies]
 rand = "0.9.0"
+egui = "0.31.0"
+eframe = "0.31.0"
+````
 
-# Gerando um número aleatório:
+## Como Executar
+Para compilar e executar o projeto, siga os passos abaixo:
 
-## Primeiro, adicionamos a linha use rand::Rng;. O Rngtrait define métodos que geradores de números aleatórios implementam, e esse trait deve estar no escopo para que possamos usar esses métodos;
+Clone o repositório para o seu ambiente local.
+Navegue até o diretório do projeto.
+Execute o comando cargo run no terminal.
 
-use rand::Rng;
+git clone https://github.com/marciosouzagcm/jogo_adivinhacao.git
+cd jogo_adivinhacao
+cargo run
 
-## Em seguida, estamos adicionando a rand::thread_rng função que nos dá o gerador de números aleatórios específico que usaremos: um que é local para o thread atual de execução e é semeado pelo sistema operacional. Então chamamos o gen_range método no gerador de números aleatórios.
+Estrutura do Código
+Aqui está uma descrição detalhada do código principal (main.rs):
 
-## Este método é definido pelo Rng trait que trouxemos para o escopo com a use rand::Rng;declaração. O gen_range método pega uma expressão de intervalo como argumento e gera um número aleatório no intervalo. O tipo de expressão de intervalo que estamos usando aqui assume a forma start..=ende é inclusivo nos limites inferior e superior, então precisamos especificar 1..=100 para solicitar um número entre 1 e 100.
+use eframe::egui; // Importa o módulo egui da biblioteca eframe para criar interfaces gráficas.
+use rand::Rng; // Importa o módulo Rng da biblioteca rand para gerar números aleatórios.
+use std::cmp::Ordering; // Importa o módulo Ordering da biblioteca padrão para comparar valores.
 
-let secret_number = rand::thread_rng().gen_range(1..=100);
+fn main() {
+    // Configura as opções padrão para a aplicação nativa do eframe.
+    let options = eframe::NativeOptions::default();
+    
+    // Executa a aplicação nativa do eframe com o título "Jogo de Adivinhação".
+    // A função run_native retorna um Result, então usamos let _ = para ignorar o resultado.
+    let _ = eframe::run_native(
+        "Jogo de Adivinhação",
+        options,
+        Box::new(|_cc| Ok(Box::new(MyApp::default()))), // Cria uma nova instância de MyApp usando a implementação padrão.
+    );
+}
 
-# Comparando o palpite com o número secreto:
+// Define a estrutura MyApp que representa o estado da aplicação.
+struct MyApp {
+    numero_secreto: u32, // Armazena o número secreto que o usuário deve adivinhar.
+    suposicao: String, // Armazena a suposição atual do usuário.
+    mensagem: String, // Armazena a mensagem a ser exibida na interface.
+}
 
-## Agora que temos a entrada do usuário e um número aleatório, podemos compará-los.
+// Implementa o traço Default para a estrutura MyApp.
+impl Default for MyApp {
+    fn default() -> Self {
+        Self {
+            // Gera um número secreto aleatório entre 1 e 100.
+            numero_secreto: rand::rng().random_range(1..=100),
+            suposicao: String::new(), // Inicializa a suposição como uma string vazia.
+            mensagem: String::from("Adivinhe o número!"), // Define a mensagem inicial.
+        }
+    }
+}
 
+// Implementa o traço eframe::App para a estrutura MyApp.
+impl eframe::App for MyApp {
+    // Define a função update que atualiza a interface gráfica.
+    fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        // Cria um painel central na interface.
+        egui::CentralPanel::default().show(ctx, |ui| {
+            // Exibe a mensagem atual.
+            ui.label(&self.mensagem);
 
+            // Cria uma linha horizontal para a entrada de texto.
+            ui.horizontal(|ui| {
+                ui.label("Sua suposição:"); // Exibe o rótulo "Sua suposição:".
+                ui.text_edit_singleline(&mut self.suposicao); // Cria uma caixa de texto para a suposição do usuário.
+            });
+
+            // Cria um botão "Enviar" e verifica se foi clicado.
+            if ui.button("Enviar").clicked() {
+                // Tenta converter a suposição do usuário para um número inteiro.
+                let suposicao: u32 = match self.suposicao.trim().parse() {
+                    Ok(num) => num, // Se a conversão for bem-sucedida, usa o número.
+                    Err(_) => {
+                        // Se a conversão falhar, exibe uma mensagem de erro.
+                        self.mensagem = String::from("Por favor, insira um número válido!");
+                        return; // Sai da função update.
+                    }
+                };
+
+                // Compara a suposição do usuário com o número secreto.
+                match suposicao.cmp(&self.numero_secreto) {
+                    Ordering::Less => self.mensagem = String::from("Muito pequeno!"), // Se a suposição for menor, exibe "Muito pequeno!".
+                    Ordering::Greater => self.mensagem = String::from("Muito grande!"), // Se a suposição for maior, exibe "Muito grande!".
+                    Ordering::Equal => {
+                        // Se a suposição for igual, exibe "Você ganhou!" e gera um novo número secreto.
+                        self.mensagem = String::from("Você ganhou!");
+                        self.numero_secreto = rand::rng().random_range(1..=100);
+                    }
+                }
+            }
+        });
+    }
+}
+
+Contribuição
+Se você quiser contribuir para este projeto, sinta-se à vontade para abrir issues e pull requests no repositório GitHub.
+
+Licença
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 

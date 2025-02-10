@@ -1,0 +1,10 @@
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\libaccesskit_consumer-0769da400fb43eb2.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\tree.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\node.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\filters.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\iterators.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\text.rs
+
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\accesskit_consumer-0769da400fb43eb2.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\tree.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\node.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\filters.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\iterators.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\text.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\tree.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\node.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\filters.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\iterators.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\accesskit_consumer-0.26.0\src\text.rs:

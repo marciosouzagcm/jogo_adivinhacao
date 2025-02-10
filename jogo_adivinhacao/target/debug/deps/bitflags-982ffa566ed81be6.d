@@ -1,0 +1,11 @@
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\libbitflags-982ffa566ed81be6.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\iter.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\parser.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\traits.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\public.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\internal.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\external.rs
+
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\bitflags-982ffa566ed81be6.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\iter.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\parser.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\traits.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\public.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\internal.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\external.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\iter.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\parser.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\traits.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\public.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\internal.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\bitflags-2.8.0\src\external.rs:

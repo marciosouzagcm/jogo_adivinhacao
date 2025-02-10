@@ -1,0 +1,11 @@
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\libegui_glow-e19a0f43fcdfa1c9.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\painter.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\misc_util.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader_version.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\vao.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader/vertex.glsl C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader/fragment.glsl
+
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\egui_glow-e19a0f43fcdfa1c9.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\painter.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\misc_util.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader_version.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\vao.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader/vertex.glsl C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader/fragment.glsl
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\painter.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\misc_util.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader_version.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\vao.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader/vertex.glsl:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\egui_glow-0.31.0\src\shader/fragment.glsl:

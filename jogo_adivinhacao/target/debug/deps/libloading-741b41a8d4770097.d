@@ -1,0 +1,11 @@
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\liblibloading-741b41a8d4770097.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\changelog.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\windows\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\util.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\safe.rs
+
+C:\Users\DELL\Projeto_Rust_Jogo_Adivinhacao\jogo_adivinhacao\target\debug\deps\libloading-741b41a8d4770097.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\changelog.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\windows\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\util.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\safe.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\changelog.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\mod.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\os\windows\mod.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\util.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\error.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-6f17d22bba15001f\libloading-0.8.6\src\safe.rs:

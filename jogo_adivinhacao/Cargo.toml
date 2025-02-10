@@ -1,0 +1,15 @@
+[package]
+name = "jogo_adivinhacao"
+version = "0.1.0"
+edition = "2021"
+authors = ["Marcio Souza <marciosouzagcm>"]
+description = " A aplicação permite que o usuário insira uma suposição para adivinhar um número secreto gerado aleatoriamente"
+license = "MIT"
+homepage = "https://www.linkedin.com/in/m%C3%A1rcio-souza-155171115/"
+repository = "https://github.com/marciosouzagcm/jogo_adivinhacao.git"
+
+
+[dependencies]
+rand = "0.9.0"
+egui = "0.31.0"
+eframe = "0.31.0"
