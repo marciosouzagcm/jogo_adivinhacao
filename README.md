@@ -36,9 +36,6 @@ cargo run
 Estrutura do Código
 Aqui está uma descrição detalhada do código principal (main.rs):
 
-use eframe::egui; // Importa o módulo egui da biblioteca eframe para criar interfaces gráficas.
-use rand::Rng; // Importa o módulo Rng da biblioteca rand para gerar números aleatórios.
-use std::cmp::Ordering; // Importa o módulo Ordering da biblioteca padrão para comparar valores.
 
 fn main() {
     // Configura as opções padrão para a aplicação nativa do eframe.
